@@ -1,0 +1,11 @@
+version: '3'
+name: test
+services:
+  rank_model:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ./meta_files:/home/
+# volumes:
+#   rank_model:
